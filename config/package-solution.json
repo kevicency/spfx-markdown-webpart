@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-markdown-webpart-client-side-solution",
+    "id": "bd367ced-7c4a-455b-8258-a52c595d9a43",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-markdown-webpart.spapp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "cd07a099-6f31-4fb1-aa62-5804b2f68c64",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "cd07a099-6f31-4fb1-aa62-5804b2f68c64",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Markdown" },
+    "description": { "default": "Markdown Editor webpart" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Markdown"
+    }
+  }]
+}
