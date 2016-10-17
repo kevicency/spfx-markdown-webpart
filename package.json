@@ -10,7 +10,8 @@
     "@microsoft/sp-client-preview": "~0.5.0",
     "office-ui-fabric-react": "0.36.0",
     "react": "0.14.8",
-    "react-dom": "0.14.8"
+    "react-dom": "0.14.8",
+    "react-markdown": "^2.4.2"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "~0.7.0",

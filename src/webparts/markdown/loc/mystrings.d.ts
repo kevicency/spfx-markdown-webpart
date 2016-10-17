@@ -1,7 +1,6 @@
 declare interface IMarkdownStrings {
   PropertyPaneDescription: string;
-  BasicGroupName: string;
-  DescriptionFieldLabel: string;
+  ContentFieldLabel: string;
 }
 
 declare module 'markdownStrings' {

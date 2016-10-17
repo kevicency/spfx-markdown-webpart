@@ -1,3 +1,3 @@
 export interface IMarkdownWebPartProps {
-  description: string;
+  content: string;
 }

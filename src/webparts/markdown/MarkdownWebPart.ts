@@ -8,18 +8,23 @@ import {
 } from '@microsoft/sp-client-preview';
 
 import * as strings from 'markdownStrings';
-import Markdown, { IMarkdownProps } from './components/Markdown';
+import MarkdownView, { IMarkdownViewProps } from './components/MarkdownView';
 import { IMarkdownWebPartProps } from './IMarkdownWebPartProps';
 
-export default class MarkdownWebPart extends BaseClientSideWebPart<IMarkdownWebPartProps> {
+const defaultContent = `
+# My Markdown Webpart
 
+Write your markdown here...
+`
+
+export default class MarkdownWebPart extends BaseClientSideWebPart<IMarkdownWebPartProps> {
   public constructor(context: IWebPartContext) {
     super(context);
   }
 
   public render(): void {
-    const element: React.ReactElement<IMarkdownProps> = React.createElement(Markdown, {
-      description: this.properties.description
+    const element: React.ReactElement<IMarkdownViewProps> = React.createElement(MarkdownView, {
+      content: this.properties.content
     });
 
     ReactDom.render(element, this.domElement);
@@ -34,10 +39,10 @@ export default class MarkdownWebPart extends BaseClientSideWebPart<IMarkdownWebP
           },
           groups: [
             {
-              groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField('content', {
+                  label: strings.ContentFieldLabel,
+                  multiline: true
                 })
               ]
             }
